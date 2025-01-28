@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Buttons</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>Bootstrap Buttons</h1>
-	<button type="button" class="btn btn-primary">Button-1</button>
-	<button type="button" class="btn btn-outline-secondary">Button-2</button>
-	<button type="button" class="btn btn-success btn-lg">Button-3</button>
-	<button type="button" class="btn btn-danger btn-sm">Button-4</button><br>
-		<button class="btn btn-warning btn-lg button" type="button">Button-5</button>
-	<button type="button" class="btn btn-info" disabled>Button-6</button>
-	<button type="button" class="btn">Button-7</button>
-	<a href="#" class="btn btn-link" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-    <script type="text/javascript" src="./script.js">
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-</script>
+    <div class="container mt-4">
+        <h4>Bootstrap Buttons</h4>
 
+        <!-- Row 1 -->
+        <div class="d-flex gap-2">
+            <button id="button-primary" class="btn btn-custom-primary">Button-1</button>
+            <button id="button-outline" class="btn btn-outline-secondary">Button-2</button>
+            <button id="button-success" class="btn btn-success">Button-3</button>
+            <button id="button-danger" class="btn btn-danger">Button-4</button>
+        </div>
+
+        <!-- Row 2 (Full-width block button) -->
+        <div class="mt-2">
+            <button id="button-block" class="btn btn-custom-block">Button-5</button>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="d-flex gap-2 mt-2">
+            <button id="button-disabled" class="btn btn-info text-white">Button-6</button>
+            <button id="button-light" class="btn btn-custom-light">Button-7</button>
+            <button id="button-link" class="btn btn-custom-link">Button-8</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

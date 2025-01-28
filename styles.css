@@ -1,6 +1,5 @@
 
-/* Your CSS Code here. */
-.button{
-	display:block;
-	width:100vw;
-}
+.btn-custom-light { background-color: #f8f9fa; border: 1px solid #ced4da; color: black; }
+        .btn-custom-block { background-color: #ffcc00; width: 100%; color: black; }
+        .btn-custom-primary { background-color: blue; color: white; }
+        .btn-custom-link { color: blue; text-decoration: underline; border: none; background: none; }
